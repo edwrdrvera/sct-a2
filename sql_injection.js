@@ -10,3 +10,5 @@ const sequelize = new Sequelize('database', 'username', 'password', {
 app.post('/login', function (req, res) {
     sequelize.query('SELECT * FROM Products WHERE name LIKE ' +  req.body.username);
   })
+  
+// https://github.com/snoopysecurity/Vulnerable-Code-Snippets
